@@ -1,0 +1,22 @@
+{
+  "name": "AI Content Generator - collection",
+  "requests": [
+    {
+      "name": "Generate content",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:5000/api/content",
+        "body": {
+          "type": "json",
+          "raw": "{\n  \"businessName\": \"BlueWave Digital\",\n  \"category\": \"Marketing Agency\",\n  \"city\": \"Mumbai\",\n  \"services\": [\n    \"SEO\",\n    \"Social Media Marketing\",\n    \"Brand Strategy\"\n  ]\n}"
+        },
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ]
+      }
+    }
+  ]
+}
